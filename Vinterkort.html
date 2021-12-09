@@ -1,8 +1,3 @@
-
-  <!DOCTYPE html>
-  <html>
-  <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
   body {
     font-family: Arial, Helvetica, sans-serif;
@@ -10,8 +5,8 @@
   
   .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     perspective: 1000px;
   }
   
@@ -35,35 +30,44 @@
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
   
   .flip-card-back {
     background-color: #0a6922;
-    color: rgb(204, 7, 7);
+    color: rgb(250, 249, 249);
     transform: rotateY(180deg);
   }
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+</style>
+ 
+ 
+ 
 
-  .html {
-    position: center;
-    
-
-
-  }
-  </style>
+<!DOCTYPE html>
+  <html>
+  <head>
+  <body style="background-color:rgb(238, 226, 223);"></body>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-  
-  
-  
+  <div class="center">
   <div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
-        <img src="https://images.pexels.com/photos/3333760/pexels-photo-3333760.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Avatar" style="width:300px;height:300px;">
+        <img src="https://images.pexels.com/photos/3333760/pexels-photo-3333760.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Avatar" style="width:500px;height:500px;">
       </div>
       <div class="flip-card-back">
         <h1>God jul</h1> 
-        <p>och gott nytt år</p>
+        <h1>och gott nytt år</h1>
+        
       </div>
     </div>
   </div>
